@@ -1,0 +1,15 @@
+{
+  "name": "test",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "source/components"
+  ],
+  "dependencies": {
+    "font-awesome": "fontawesome#~4.4.0",
+    "base16-palette": "triple-j/base16-palette",
+    "jquery": "~2.1.4",
+    "bootstrap-sass": "twbs/bootstrap-sass#~3.3.5"
+  }
+}
