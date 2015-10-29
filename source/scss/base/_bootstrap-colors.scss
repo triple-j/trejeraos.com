@@ -25,6 +25,8 @@ $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 
+$brand-code:            #c7254e !default;
+
 $secondary-border-color:    $gray-light-1;
 $main-border-color:         $gray-light-2;
 
@@ -95,7 +97,7 @@ $input-bg:                       $body-bg !default;
 $input-border:                   $secondary-border-color !default;
 
 //** Border color for inputs on focus
-$input-border-focus:             #66afe9 !default;
+$input-border-focus:             lighten($brand-primary, 20.4%) !default;
 
 //** Placeholder text color
 $input-color-placeholder:        lighten($gray, 26.6%) !default;
@@ -199,17 +201,17 @@ $pagination-disabled-border:           $pagination-border !default;
 //
 //## Define colors for form feedback states and, by default, alerts.
 
-$state-success-text:             #3c763d !default;
-$state-success-bg:               #dff0d8 !default;
+$state-success-text:             desaturate(mix(black, $brand-success, 35%), 1%) !default;
+$state-success-bg:               mix(white, $brand-success, 78.8%) !default;
 
-$state-info-text:                #31708f !default;
-$state-info-bg:                  #d9edf7 !default;
+$state-info-text:                desaturate(mix(black, $brand-info, 35%), 1%) !default;
+$state-info-bg:                  mix(white, $brand-info, 78.8%) !default;
 
-$state-warning-text:             #8a6d3b !default;
-$state-warning-bg:               #fcf8e3 !default;
+$state-warning-text:             desaturate(mix(black, $brand-warning, 35%), 1%) !default;
+$state-warning-bg:               mix(white, $brand-warning, 78.8%) !default;
 
-$state-danger-text:              #a94442 !default;
-$state-danger-bg:                #f2dede !default;
+$state-danger-text:              desaturate(mix(black, $brand-danger, 35%), 1%) !default;
+$state-danger-bg:                mix(white, $brand-danger, 78.8%) !default;
 
 
 //== Tooltips
@@ -356,16 +358,16 @@ $carousel-caption-color:                      $text-color-light !default;
 //
 //##
 
-$close-color:                 #000 !default;
-$close-text-shadow:           0 1px 0 #fff !default;
+$close-color:                 $black !default;
+$close-text-shadow:           0 1px 0 $white !default;
 
 
 //== Code
 //
 //##
 
-$code-color:                  #c7254e !default;
-$code-bg:                     #f9f2f4 !default;
+$code-color:                  $brand-code !default;
+$code-bg:                     mix(white, $brand-code, 94%) !default;
 
 $kbd-color:                   $text-color-light !default;
 $kbd-bg:                      $gray-dark !default;
