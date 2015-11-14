@@ -1,0 +1,13 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: {
+        image: url('#{$dir-images}/trejeraos-background.svg');
+        position: center top;
+        size: 100% auto;
+        repeat: no-repeat;
+    }
+}
