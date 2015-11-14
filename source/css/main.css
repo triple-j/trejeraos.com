@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 .base00-background {
   background-color: #f9f8f5; }
 
@@ -7128,5 +7129,29 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+
+html,
+body {
+  height: 100%; }
+
+body {
+  background-image: url("../assets/imgs/trejeraos-background.svg");
+  background-position: center top;
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
+
+#logo {
+  margin: -5em auto 0;
+  width: 20em;
+  height: 10em;
+  position: relative;
+  top: 40%;
+  text-align: center; }
+  #logo h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0; }
+  #logo img {
+    width: 80px;
+    height: auto; }
 
 /*# sourceMappingURL=main.css.map */
