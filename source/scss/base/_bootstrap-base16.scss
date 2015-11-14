@@ -7,25 +7,24 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
-$gray-base:              #000 !default;
-$gray-darker:            lighten($gray-base, 13.5%) !default; // #222 // base00
-$gray-dark:              lighten($gray-base, 20%) !default;   // #333 // base01
-$gray:                   lighten($gray-base, 33.5%) !default; // #555 // base02
-$gray-light:             lighten($gray-base, 46.7%) !default; // #777 // base03
-$gray-light-1:           #ccc                     !default; // #ccc // base04
-$gray-light-2:           #ddd                     !default; // #ddd // base05
-$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee // base06
+$gray-darker:            $base00 !default;
+$gray-dark:              $base01 !default;
+$gray:                   $base02 !default;
+$gray-light:             $base03 !default;
+$gray-light-1:           $base04 !default;
+$gray-light-2:           $base05 !default;
+$gray-lighter:           $base06 !default;
 
-$white:             #fff; // base07
-$black:             #000; // base00 -or- #000
+$white:             $base07;
+$black:             $base00;
 
-$brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
-$brand-success:         #5cb85c !default;
-$brand-info:            #5bc0de !default;
-$brand-warning:         #f0ad4e !default;
-$brand-danger:          #d9534f !default;
+$brand-primary:         darken($b16-blue, 6.5%) !default;
+$brand-success:         $b16-green !default;
+$brand-info:            $b16-cyan !default;
+$brand-warning:         $b16-orange !default;
+$brand-danger:          $b16-red !default;
 
-$brand-code:            #c7254e !default;
+$brand-code:            $b16-brown !default;
 
 $secondary-border-color:    $gray-light-1;
 $main-border-color:         $gray-light-2;
@@ -201,17 +200,17 @@ $pagination-disabled-border:           $pagination-border !default;
 //
 //## Define colors for form feedback states and, by default, alerts.
 
-$state-success-text:             desaturate(mix(black, $brand-success, 35%), 1%) !default;
-$state-success-bg:               mix(white, $brand-success, 78.8%) !default;
+$state-success-text:             desaturate(mix($black, $brand-success, 35%), 1%) !default;
+$state-success-bg:               mix($white, $brand-success, 78.8%) !default;
 
-$state-info-text:                desaturate(mix(black, $brand-info, 35%), 1%) !default;
-$state-info-bg:                  mix(white, $brand-info, 78.8%) !default;
+$state-info-text:                desaturate(mix($black, $brand-info, 35%), 1%) !default;
+$state-info-bg:                  mix($white, $brand-info, 78.8%) !default;
 
-$state-warning-text:             desaturate(mix(black, $brand-warning, 35%), 1%) !default;
-$state-warning-bg:               mix(white, $brand-warning, 78.8%) !default;
+$state-warning-text:             desaturate(mix($black, $brand-warning, 35%), 1%) !default;
+$state-warning-bg:               mix($white, $brand-warning, 78.8%) !default;
 
-$state-danger-text:              desaturate(mix(black, $brand-danger, 35%), 1%) !default;
-$state-danger-bg:                mix(white, $brand-danger, 78.8%) !default;
+$state-danger-text:              desaturate(mix($black, $brand-danger, 35%), 1%) !default;
+$state-danger-bg:                mix($white, $brand-danger, 78.8%) !default;
 
 
 //== Tooltips
@@ -367,7 +366,7 @@ $close-text-shadow:           0 1px 0 $white !default;
 //##
 
 $code-color:                  $brand-code !default;
-$code-bg:                     mix(white, $brand-code, 94%) !default;
+$code-bg:                     mix($white, $brand-code, 94%) !default;
 
 $kbd-color:                   $text-color-light !default;
 $kbd-bg:                      $gray-dark !default;
