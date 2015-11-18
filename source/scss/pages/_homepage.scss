@@ -1,8 +1,10 @@
 #logo {
-    margin: -5em auto 0;
+    $logo-box-height: 12em;
+    
+    margin: ($logo-box-height/2*-1) auto 0;
     
     width: 20em;
-    height: 10em;
+    height: $logo-box-height;
     
     position: relative;
     top: 40%;
@@ -19,4 +21,8 @@
         width: 80px;
         height: auto;
     }
+}
+
+.around-the-web {
+    @extend .list-inline;
 }
